@@ -49,3 +49,26 @@ reduce（）：取一个函数，将两个列表元素结合成一个元素。
 
 array操作符
 --
+
+scala中的partition span splitAt groupBy
+---
+
+注：
+    val (a,b) = List(1,2,3,4,5).partition(_%2==0)
+    // (List(2,4), List(1,3,5))
+
+    可把Collection分成：满足条件的一组，其他的另一组。
+
+    和partition相似的是span，但有不同：
+
+    List(1,9,2,4,5).span(_<3)       //
+     (List(1),List(9, 2, 4, 5))，碰到不符合就结束
+
+    List(1,9,2,4,5).partition(_<3) //
+     (List(1, 2),List(9, 4, 5))，扫描所有
+
+    List(1,3,5,7,9) splitAt 2 //
+     (List(1, 3),List(5, 7, 9))
+
+    List(1,3,5,7,9) groupBy (5<) //
+     Map((true,List(7, 9)), (false,List(1, 3, 5)))
