@@ -115,10 +115,7 @@ key symbol of scala
         return result
     }
     }
-
----------------------
-
-本文来自 guyuetftb 的CSDN 博客 ，全文地址请点击：https://blog.csdn.net/pengyajie/article/details/72420419?utm_source=copy 
+通配符用法
 
     1、作为“通配符”，类似Java中的*。如import scala.math._
     2、:_*作为一个整体，告诉编译器你希望将某个参数当作参数序列处理！例如val s = sum(1 to 5:_*)就是将1 to 5当作参数序列处理。
