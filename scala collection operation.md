@@ -209,3 +209,6 @@ foldleft操作
     a: List[Int] = List(1, 5, 7, 8, 10)
 
 ordeing和ordered为traits
+
+### range.inclusive 
+一个range的    
